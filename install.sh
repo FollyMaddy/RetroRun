@@ -48,7 +48,6 @@
 #
 #--------------------------------------
 
-
 #copy script and make it executable
 mkdir ~/RetroPie/RetroRun
 cp RetroRun.sh ~/RetroPie/RetroRun/RetroRun.sh
