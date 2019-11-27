@@ -65,7 +65,7 @@ touch $desktopfileindirectory
 cat > $desktopfileindirectory << _EOF_
 [Desktop Entry]
 Encoding=UTF-8
-Name=RetroRuntest
+Name=RetroRun
 Comment=Retro Game Runner
 Type=Application
 Exec=$homedir/RetroPie/RetroRun/RetroRun.sh %f
