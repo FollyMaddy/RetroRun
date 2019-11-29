@@ -28,7 +28,7 @@
 # Make sure rom files are not set as executable, otherwise some files will be detected as a script (like .cue) and then do not work!!
 
 # Issue with RetroRun => opening with other programs :
-# On raspbian,  zip or or some octet files will not open with other programs anymore if using RetroRun
+# On raspbian,  zip or some octet files will not open with other programs anymore if using RetroRun
 # So if you want them to open with another program than RetroRun use option : open with !!!
 # (tip : troublesome associations can be manually removed in the mimelist)
 #
