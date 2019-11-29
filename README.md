@@ -1,73 +1,58 @@
-# retropieXstation.py
-use :
+# RetroRun
 
-retropieXstation.py is a simple project to run allmost all ROMS of RetroPie from your windows desktop enviroment (X).
+Open RetroPie roms in standard pcmanfm filemanager with 1 click !
 
-dependancies :
+Program : RetroRun.sh
 
-This program only works if RetroPie is installed on your computer.
+Version : 1.4
 
-Also make sure you have installed the desired python-modules.
-
-How to run :
-
-Make the program executable, dubbleclick and choose open in terminal.
-
-You can run it also directly from the terminal with : python retropieXstation.py
-
-Or run it from the terminal with : ./retropieXstation.py
-
-# retropieXstation-verbose.py
 
 Use : 
 
-retropieXstation-verbose is a program to start ROMS of RetroPie in verbose mode from your windows desktop enviroment (X).
+RetroRun is a simple program created to run allmost all ROMS of RetroPie from your windows desktop enviroment (X) with pcmanfm filemanager
 
-Sometimes roms or emulators do not work. This program is created to find the problems.
+If a resolution is added to the script, then roms will run in an alternative resolution
 
-Beware : It only works with retroarch libretro cores and zip files are not supported !
+If you quit the rom, the computer turns back in the original resolution
+
 
 Dependencies : 
 
-This program only works if RetroPie is installed on your computer.
+RetroRun only works if RetroPie is installed on your computer.
 
-Also make sure you have installed the desired python-modules.
+RetroRun uses pcmanfm filemanager !!!
 
-How to run :
-
-Make the program executable, dubbleclick and choose open in terminal.
-
-You can run it also directly from the terminal with : python retropieXstation-verbose.py
-
-Or run it from the terminal with : ./retropieXstation-verbose.py
-
-# retropieXstation-800x600.py
-Use : 
-
-retropieXstation-resolution is a simple program created to run allmost all ROMS of RetroPie from your windows desktop enviroment (X).
-
-Mainly created for old x86 pc's with old gfx-card.
-
-Old gfx cards don't run the program emulationstation very well and are slow in high resolutions. 
-
-With this program you bypass this problem !
-
-- It get's the standard resolution;
-
-- When running the emulator it changes to 800x600;
-
-- It changes back to the standard resolution if you stop the emulator.
-
-dependancies :
-
-This program only works if RetroPie is installed on your computer.
-
-Also make sure you have installed the desired python-modules.
 
 How to run :
 
+An install script and an uninstall script is added
+
+Discription of what these scripts do are in the scripts themselves.
+
 Make the program executable, dubbleclick and choose open in terminal.
 
-You can run it also directly from the terminal with : python retropieXstation-800x600.py
+Or run it from the terminal with : ./install.sh
 
-Or run it from the terminal with : ./retropieXstation-800x600.py
+If you want to start RetroRun in a different resolution then  run the installer from the terminal with, for example : ./install.sh 800x600
+
+You can check your available resolutions with : xrandr
+
+for uninstall use the file uninstall.sh
+
+
+Additional tips :
+
+The program uses the retropie directory rom directory structure, 
+
+but the directory can also be */roms/'system'/(*/)*.* (*=can be anything)
+
+Seems like all files can be associated with RetroRun, including zip and cue
+
+Make sure rom files are not set as executable, otherwise some files will be detected as a script (like .cue) and then do not work!!
+
+
+Issue => opening with other programs :
+
+If zip or txt(octet) files are associated with RetroRun they will not open with other programs anymore !
+
+So if you want them to open with another program use option : open with !!!
