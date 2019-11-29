@@ -1,21 +1,20 @@
 #!/bin/bash
 
 # Program : uninstall.sh (uninstaller for RetroRun)
-# Version : 1.3
+# Version : 1.4
 
 # Use : 
 # This uninstaller removes the RetroRun directory in RetroPie, 
 # the application and associates filetypes with RetroRun.
 
 # How to run :
+# Do not run as root !
 # Make the program executable, dubbleclick and choose open in terminal.
 # Or run it from the terminal with : ./uninstall.sh
-# Do not run as root !
-# (1 line uses sudo for removing the application file)
 
 #
 # Author : Folkert van der Meulen
-# Date   : 26/11/2019
+# Date   : 29/11/2019
 #
 # Copyright 2019 Folkert van der Meulen
 #
@@ -34,15 +33,11 @@
 #
 #--------------------------------------
 
-
 #remove RetroRun file associations
-sed -i ':a;N;$!ba;s/application.*RetroRun.desktop\;\n//g' \
-~/.config/mimeapps.list
+sed -i 's/^.*\bRetroRun\b.*$//g' ~/.config/mimeapps.list
 
 #remove RetroRun.desktop
-retrorundesktopfile=/usr/share/applications/RetroRun.desktop
-sudo rm $retrorundesktopfile
+rm ~/.local/share/applications/RetroRun.desktop
 
 #force remove RetroRun directory
-retrorundir=~/RetroPie/RetroRun
-rm -fr $retrorundir
+rm -fr ~/RetroPie/RetroRun
