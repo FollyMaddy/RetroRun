@@ -59,7 +59,7 @@ So if you want them to open with another program than RetroRun use option : open
 
 (tip : troublesome associations can be manually removed in the mimelist)
 
-On lubuntu,  zip or or some octet files will open with the first associated programs
+On lubuntu,  zip or some octet files will open with the first associated programs
 
 These additional associations are in /usr/share/applications/mimeinfo.cache and overrule associations in ~/.config/mimeapps.list
 
