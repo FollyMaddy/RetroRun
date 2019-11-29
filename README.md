@@ -53,7 +53,7 @@ Make sure rom files are not set as executable, otherwise some files will be dete
 
 Issue with RetroRun => opening with other programs :
 
-On raspbian,  zip or or some octet files will not open with other programs anymore if using RetroRun
+On raspbian,  zip or some octet files will not open with other programs anymore if using RetroRun
 
 So if you want them to open with another program than RetroRun use option : open with !!!
 
