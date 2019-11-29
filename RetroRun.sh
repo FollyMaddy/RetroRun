@@ -23,17 +23,22 @@
 
 # Additional tips :
 # The program uses the retropie directory rom directory structure, 
-# but the directory can also be */roms/'system'/(*/)*.* (*=can be anything)
+# but the directory can also be (*=can be anything) --- >  */roms/'systemname'/('one or more subdirectory's'/)*.* 
 # Seems like all files can be associated with RetroRun, including zip and cue
 # Make sure rom files are not set as executable, otherwise some files will be detected as a script (like .cue) and then do not work!!
 
-# Issue => opening with other programs :
-# If zip or txt(octet) files are associated with RetroRun they will not open with other programs anymore !
-# So if you want them to open with another program use option : open with !!!
+# Issue with RetroRun => opening with other programs :
+# On raspbian,  zip or or some octet files will not open with other programs anymore if using RetroRun
+# So if you want them to open with another program than RetroRun use option : open with !!!
+# (tip : troublesome associations can be manually removed in the mimelist)
+#
+# On lubuntu,  zip or or some octet files will open with the first associated programs
+# These additional associations are in /usr/share/applications/mimeinfo.cache and overrule associations in ~/.config/mimeapps.list
+# So if you want them to open with RetroRun use option : open with !!!
 
 #
 # Author : Folkert van der Meulen
-# Date   : 26/11/2019
+# Date   : 29/11/2019
 #
 # Copyright 2019 Folkert van der Meulen
 #
