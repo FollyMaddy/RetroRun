@@ -6,6 +6,7 @@ Program : RetroRun.sh
 
 Version : 1.4
 
+#
 
 Use : 
 
@@ -15,6 +16,7 @@ If a resolution is added to the script, then roms will run in an alternative res
 
 If you quit the rom, the computer turns back in the original resolution
 
+#
 
 Files:
 
@@ -40,6 +42,7 @@ A reboot is necessary to turn the computer into VESA mode .
 
 Remove the file if you want to turn back to the normal state .
 
+#
 
 Dependencies : 
 
@@ -47,6 +50,7 @@ RetroRun only works if RetroPie is installed on your computer.
 
 RetroRun uses pcmanfm filemanager !!!
 
+#
 
 How to run :
 
@@ -72,6 +76,7 @@ With this option you bypass this problem !
 
 - It changes back to the standard resolution if you stop the emulator.
 
+#
 
 Additional tips :
 
@@ -83,6 +88,7 @@ Seems like all files can be associated with RetroRun, including zip and cue
 
 Make sure rom files are not set as executable, otherwise some files will be detected as a script (like .cue) and then do not work!!
 
+#
 
 Issue with RetroRun => opening with other programs :
 
