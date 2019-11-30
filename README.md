@@ -42,13 +42,9 @@ RetroRun uses pcmanfm filemanager !!!
 
 How to run :
 
-An install script and an uninstall script is added
+Make the install.sh / uninstall.sh executable, dubbleclick and choose open in terminal.
 
-Discription of what these scripts do are in the scripts themselves.
-
-Make the program executable, dubbleclick and choose open in terminal.
-
-Or run it from the terminal with : ./install.sh
+Or run it from the terminal with : ./install.sh  or if you want to uninstall : ./uninstall.sh
 
 If you want to start RetroRun in a different resolution then  run the installer from the terminal with, for example : ./install.sh 800x600
 
@@ -65,8 +61,6 @@ With this option you bypass this problem !
 - When running the emulator it changes to, for example: 800x600;
 
 - It changes back to the standard resolution if you stop the emulator.
-
-For uninstall run: ./uninstall.sh
 
 
 Additional tips :
