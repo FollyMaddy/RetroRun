@@ -16,7 +16,7 @@ If a resolution is added to the script, then roms will run in an alternative res
 If you quit the rom, the computer turns back in the original resolution
 
 
-files:
+Files:
 
 RetroRun.sh = the actual program, after installation, desktop file is linked to this program
 
@@ -26,11 +26,11 @@ uninstall.sh=removes the RetroRun directory in RetroPie,  the application (.desk
 
 use-vesa.conf=if resolution 800x600 is not possible with RetroRun,
 
-try another monitor and/or paste and use the file /usr/share/xorg.conf.d/use-vesa.conf .
+				 try another monitor and/or paste and use the file /usr/share/xorg.conf.d/use-vesa.conf .
 
-A reboot is necessary to turn the computer into VESA mode .
+				 A reboot is necessary to turn the computer into VESA mode .
 
-Remove the file if you want to turn back to the normal state .
+				 Remove the file if you want to turn back to the normal state .
 
 
 Dependencies : 
@@ -46,7 +46,9 @@ Make the install.sh / uninstall.sh executable, dubbleclick and choose open in te
 
 Or run it from the terminal with : ./install.sh  or if you want to uninstall : ./uninstall.sh
 
-If you want to start RetroRun in a different resolution then  run the installer from the terminal with, for example : ./install.sh 800x600
+If you want to start RetroRun in a different resolution,
+
+run the installer from the terminal with, for example : ./install.sh 800x600
 
 You can check your available resolutions with : xrandr
 
