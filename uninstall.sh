@@ -2,16 +2,6 @@
 
 # Program : uninstall.sh (uninstaller for RetroRun)
 # Version : 1.4
-
-# Use : 
-# This uninstaller removes the RetroRun directory in RetroPie, 
-# the application and associates filetypes with RetroRun.
-
-# How to run :
-# Do not run as root !
-# Make the program executable, dubbleclick and choose open in terminal.
-# Or run it from the terminal with : ./uninstall.sh
-
 #
 # Author : Folkert van der Meulen
 # Date   : 29/11/2019

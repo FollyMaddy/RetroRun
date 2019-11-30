@@ -2,41 +2,6 @@
 
 # Program : install.sh (installer for RetroRun)
 # Version : 1.4
-
-# Use : 
-# This installer creates a directory in RetroPie, 
-# makes an application and associates filetypes with RetroRun.
-# If a resolution is added to the script, then roms will run in an alternative resolution
-# If you quit the rom, the computer turns back in the original resolution
-
-# Dependencies : 
-# RetroRun will only work if RetroPie is installed on your computer.
-# RetroRun also uses pcmanfm filemanager !!!
-
-# How to run :
-# Do not run as root !
-# Make the program executable, dubbleclick and choose open in terminal.
-# Or run it from the terminal with : ./install.sh
-# -------------------
-# If run in terminal, you can add a resolution to the install.sh
-# If you want to start RetroRun in a different resolution then  run the installer from the terminal with, for example : ./install.sh 800x600
-# You can check your available resolutions with : xrandr
-
-# Additional tips for RetroRun:
-# The program uses the retropie directory rom directory structure, 
-# but the directory can also be (*=can be anything) --- >  */roms/'systemname'/('one or more subdirectory's'/)*.* 
-# Seems like all files can be associated with RetroRun, including zip and cue
-# Make sure rom files are not set as executable, otherwise some files will be detected as a script (like .cue) and then do not work!!
-
-# Issue with RetroRun => opening with other programs :
-# On raspbian,  zip or some octet files will not open with other programs anymore if using RetroRun
-# So if you want them to open with another program than RetroRun use option : open with !!!
-# (tip : troublesome associations can be manually removed in the mimelist)
-#
-# On lubuntu,  zip or some octet files will open with the first associated programs
-# These additional associations are in /usr/share/applications/mimeinfo.cache and overrule associations in ~/.config/mimeapps.list
-# So if you want them to open with RetroRun use option : open with !!!
-
 #
 # Author : Folkert van der Meulen
 # Date   : 29/11/2019
@@ -58,10 +23,6 @@
 #
 #--------------------------------------
 
-#add desired resolution to the installation process, so run it, for example, like --> ./install.sh 800x600
-#run 'xrandr' to see the possible resolutions
-#on old computers the recommeded resolution is 800x600
-#on new computers it is not recommeded to use this option  
 desiredresolution=$1
 
 #copy script and make it executable
