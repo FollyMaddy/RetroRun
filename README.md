@@ -18,19 +18,27 @@ If you quit the rom, the computer turns back in the original resolution
 
 Files:
 
-RetroRun.sh = the actual program, after installation, desktop file is linked to this program
+RetroRun.sh
 
-install.sh=creates a directory in RetroPie, makes an application (.desktop file) and associates filetypes with RetroRun.
+the actual program, after installation, desktop file is linked to this program
 
-uninstall.sh=removes the RetroRun directory in RetroPie,  the application (.desktop file) and associated filetypes with RetroRun.
+install.sh
 
-use-vesa.conf=if resolution 800x600 is not possible with RetroRun,
+creates a directory in RetroPie, makes an application (.desktop file) and associates filetypes with RetroRun.
 
-				 try another monitor and/or paste and use the file /usr/share/xorg.conf.d/use-vesa.conf .
+uninstall.sh
 
-				 A reboot is necessary to turn the computer into VESA mode .
+removes the RetroRun directory in RetroPie,  the application (.desktop file) and associated filetypes with RetroRun.
 
-				 Remove the file if you want to turn back to the normal state .
+use-vesa.conf
+
+if resolution 800x600 is not possible with RetroRun,
+
+try another monitor and/or paste and use the file /usr/share/xorg.conf.d/use-vesa.conf .
+
+A reboot is necessary to turn the computer into VESA mode .
+
+Remove the file if you want to turn back to the normal state .
 
 
 Dependencies : 
