@@ -10,11 +10,11 @@ Version : 1.4
 
 Use : 
 
-RetroRun is a simple program created to run allmost all ROMS of RetroPie from your windows desktop enviroment (X) with pcmanfm filemanager
+RetroRun is a simple program created to run allmost all ROMS of RetroPie from your windows desktop enviroment (X) with pcmanfm filemanager.
 
-If a resolution is added to the script, then roms will run in an alternative resolution
+If a resolution is added to the script, then roms will run in an alternative resolution.
 
-If you quit the rom, the computer turns back in the original resolution
+If you quit the rom, the computer turns back in the original resolution.
 
 #
 
@@ -22,7 +22,7 @@ Files:
 
 # RetroRun.sh
 
-The actual program, after installation, a desktop file is linked to this program
+The actual program, after installation, a desktop file is linked to this program.
 
 # install.sh
 
@@ -40,7 +40,7 @@ Try another monitor and/or paste and use the file /usr/share/xorg.conf.d/use-ves
 
 A reboot is necessary to turn the computer into VESA mode, if file is used.
 
-Remove the file if you want to turn back to the normal state .
+Remove the file if you want to turn back to the normal state.
 
 #
 
@@ -84,7 +84,7 @@ The program uses the retropie directory rom directory structure,
 
 but the directory can also be */roms/'system'/(*/)*.* (*=can be anything)
 
-Seems like all files can be associated with RetroRun, including zip and cue
+Seems like all files can be associated with RetroRun, including zip and cue.
 
 Make sure rom files are not set as executable, otherwise some files will be detected as a script (like .cue) and then do not work!!
 
@@ -92,13 +92,13 @@ Make sure rom files are not set as executable, otherwise some files will be dete
 
 Issue with RetroRun => opening with other programs :
 
-On raspbian,  zip or some octet files will not open with other programs anymore if using RetroRun
+On raspbian,  zip or some octet files will not open with other programs anymore if using RetroRun.
 
 So if you want them to open with another program than RetroRun use option : open with !!!
 
 (tip : troublesome associations can be manually removed in the mimelist)
 
-On lubuntu,  zip or some octet files will open with the first associated programs
+On lubuntu,  zip or some octet files will open with the first associated programs.
 
 These additional associations are in /usr/share/applications/mimeinfo.cache and overrule associations in ~/.config/mimeapps.list
 
