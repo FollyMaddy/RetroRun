@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Program : uninstall.sh (uninstaller for RetroRun)
-# Version : 1.4
+# Version : 1.5
 #
 # Author : Folkert van der Meulen
-# Date   : 29/11/2019
+# Date   : 27/01/2020
 #
-# Copyright 2019 Folkert van der Meulen
+# Copyright 2020 Folkert van der Meulen
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
