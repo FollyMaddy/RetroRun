@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Program : RetroRun.sh
-# Version : 1.4
+# Version : 1.5
 #
 # Author : Folkert van der Meulen
-# Date   : 29/11/2019
+# Date   : 27/01/2020
 #
-# Copyright 2019 Folkert van der Meulen
+# Copyright 2020 Folkert van der Meulen
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -30,7 +30,7 @@
 #load file with bash script
 option=$1
 ##if option contains a resolution then execute the commands or else run the filebrowser
-if [[ -z "${option##640x480}" ]] || [[ -z "${option##800x600}" ]]; then
+if [[ -z "${option##640x480}" ]] || [[ -z "${option##800x600}" ]] || [[ -z "${option##720x400}" ]]; then
     low_resolution=$option
     echo $low_resolution
     #read the second option
@@ -69,8 +69,10 @@ if [[ -n "$option" ]]; then
     done   
     #echo $romsdirlocation
     #echo $systemlocation
+    $HOME/RetroPie/RetroRun/RetroRun_onstart.sh
     #nog oplossen : cmd werkt in raspbian niet meer vanuit de terminal, bij lubuntu wel?
     $change_low_resolution_cmd \
     /opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ ${pathsplit[systemlocation]} "${option}"
     $change_standard_resolution_cmd
+    
 fi

@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Program : install.sh (installer for RetroRun)
-# Version : 1.4
+# Version : 1.5
 #
 # Author : Folkert van der Meulen
-# Date   : 29/11/2019
+# Date   : 27/01/2020
 #
-# Copyright 2019 Folkert van der Meulen
+# Copyright 2020 Folkert van der Meulen
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -29,6 +29,8 @@ desiredresolution=$1
 mkdir ~/RetroPie/RetroRun
 cp RetroRun.sh ~/RetroPie/RetroRun/RetroRun.sh
 chmod +x ~/RetroPie/RetroRun/RetroRun.sh
+cp RetroRun_onstart.sh ~/RetroPie/RetroRun/RetroRun_onstart.sh
+chmod +x ~/RetroPie/RetroRun/RetroRun_onstart.sh
 
 #generate desktopfile in the user applications directory ( code idea is from emulationstation.sh in retropie setup )
 desktopfile=~/.local/share/applications/RetroRun.desktop
