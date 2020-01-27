@@ -44,6 +44,12 @@ uncomment the feh line in RetroRun_onstart.sh.
 
 Creates a directory in RetroPie, makes an application (.desktop file) and associates filetypes with RetroRun.
 
+# install_800x600.sh
+
+Runs install.sh with 800x600 option, so RetroRun will run in low resolution after installation.
+
+Created so you don't have to do this command, manually, in the terminal.
+
 # uninstall.sh
 
 Removes the RetroRun directory in RetroPie,  the application (.desktop file) and associated filetypes with RetroRun.
