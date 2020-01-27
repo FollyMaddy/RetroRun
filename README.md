@@ -4,7 +4,7 @@ Open RetroPie roms in standard pcmanfm filemanager with 1 click !
 
 Program : RetroRun.sh
 
-Version : 1.4
+Version : 1.5
 
 #
 
@@ -23,6 +23,20 @@ Files:
 # RetroRun.sh
 
 The actual program, after installation, a desktop file is linked to this program.
+
+# RetroRun_onstart.sh
+
+Addon-script for displaying a black image while loading and exiting a rom.
+
+Uses the program feh.
+
+The feh line is commented in the script, so it's -> OFF <- by default !!!
+
+So if you want to use this addon-script install feh with :
+
+sudo apt-get install feh
+
+And uncomment the feh line in the script.
 
 # install.sh
 
