@@ -32,7 +32,7 @@ Uses the program feh.
 
 The feh line is commented in the script, so it's -> OFF <- by default !!!
 
-So if you want to use this addon-script install feh with :
+So if you want to use this addon-script, install feh with :
 
 sudo apt-get install feh
 
