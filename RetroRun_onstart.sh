@@ -1,4 +1,4 @@
-#before using this addon-script install feh with :
+#before using this addon-script, install feh with :
 #sudo apt-get install feh
 
 #uncomment the "feh" line to display a black image before and after executing a rom
