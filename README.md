@@ -36,7 +36,9 @@ So if you want to use this addon-script install feh with :
 
 sudo apt-get install feh
 
-And uncomment the feh line in the script.
+and :
+
+uncomment the feh line in RetroRun_onstart.sh.
 
 # install.sh
 
@@ -47,6 +49,8 @@ Creates a directory in RetroPie, makes an application (.desktop file) and associ
 Removes the RetroRun directory in RetroPie,  the application (.desktop file) and associated filetypes with RetroRun.
 
 # use-vesa.conf
+
+(for use on X86 computers)
 
 If the resolution 800x600 is not possible with RetroRun :
 
@@ -79,6 +83,8 @@ run the installer from the terminal with, for example : ./install.sh 800x600
 You can check your available resolutions with : xrandr
 
 The resolution option is mainly created for old x86 pc's with old gfx-card.
+
+(Actually, it also should work on the Raspberry-pi 4)
 
 Old gfx cards don't run roms very well and are slow in high resolutions. 
 
