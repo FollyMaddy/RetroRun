@@ -26,7 +26,7 @@ The actual program, after installation, a desktop file is linked to this program
 
 # RetroRun_onstart.sh
 
-Addon-script for displaying a black image while loading and exiting a rom.
+Addon-script for displaying an image while loading and exiting a rom.
 
 Uses the program feh.
 
@@ -38,7 +38,7 @@ sudo apt-get install feh
 
 and :
 
-uncomment the feh line in RetroRun_onstart.sh.
+uncomment your desired feh line in RetroRun_onstart.sh.
 
 # install.sh
 
