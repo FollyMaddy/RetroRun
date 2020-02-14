@@ -108,7 +108,9 @@ Additional tips :
 
 The program uses the retropie directory rom directory structure, 
 
-but the directory can also be */roms/'system'/(*/)*.* (*=can be anything)
+but the directory can also be X/roms/'system'/(X/)X.X (X=can be anything)
+
+The above is handy for running roms directly from external media !!!
 
 Seems like all files can be associated with RetroRun, including zip and cue.
 
