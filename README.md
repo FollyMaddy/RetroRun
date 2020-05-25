@@ -50,9 +50,15 @@ Runs install.sh with 800x600 option, so RetroRun will run in low resolution afte
 
 Created so you don't have to do this command, manually, in the terminal.
 
+if used, install.sh will also add an emulationstation desktop file that will run in low resolution
+
 # uninstall.sh
 
-Removes the RetroRun directory in RetroPie,  the application (.desktop file) and associated filetypes with RetroRun.
+Removes the RetroRun directory in RetroPie,  the application('s) (.desktop file('s)) and associated filetypes with RetroRun.
+
+# rpieLowRes.sh
+
+Run Emulationstation in low resolution.
 
 # use-vesa.conf
 
