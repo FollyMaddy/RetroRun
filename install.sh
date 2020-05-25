@@ -77,3 +77,29 @@ model\/x\.stl\-binary\=RetroRun\.desktop\;/g}' \
 $mimeappsfile
 fi
 
+desktopfile=~/.local/share/applications/rpieLowRes.desktop
+rm $desktopfile
+
+if [[ "$desiredresolution" == 640x480 ]] || [[ "$desiredresolution" == 800x600 ]] || [[ "$desiredresolution" == 720x400 ]]; then
+cp rpieLowRes.sh ~/RetroPie/RetroRun/rpieLowRes.sh
+chmod +x ~/RetroPie/RetroRun/rpieLowRes.sh
+
+#generate desktopfile in the user applications directory ( code idea is from emulationstation.sh in retropie setup )
+desktopfile=~/.local/share/applications/rpieLowRes.desktop
+homedir=$(echo $HOME)
+#remove desktopfile if exists
+touch $desktopfile
+cat > $desktopfile << _EOF_
+[Desktop Entry]
+Encoding=UTF-8
+Name=rpieLowRes
+Comment=Emulationstation in low resolution
+Type=Application
+Exec=$homedir/RetroPie/RetroRun/rpieLowRes.sh $desiredresolution %f
+Icon=/opt/retropie/supplementary/emulationstation/scripts/retropie.svg
+Terminal=true
+X-KeepTerminal=true
+Categories=Emulator;Game
+_EOF_
+
+fi
