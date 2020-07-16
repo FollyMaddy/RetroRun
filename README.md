@@ -75,7 +75,9 @@ Remove the file if you want to turn back to the normal state.
 
 With Debian Buster I found that this solution did not work ! :
 
-If xrandr is used and you get WAYLAND0 connected then,
+(Here I did not use the file use-vesa.conf at all !)
+
+If you run "xrandr" in terminal and you get "WAYLAND0 connected" then,
 
 "uncommented" a line in deamon.conf (can also be another file check with (cat .))
 
