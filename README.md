@@ -72,6 +72,19 @@ A reboot is necessary to turn the computer into VESA mode, if file is used.
 
 Remove the file if you want to turn back to the normal state.
 
+
+With Debian Buster I found that this solution did not work ! :
+
+Here I also "uncommented" a line in deamon.conf (can also be another file check with (cat *.*))
+
+sudo nano /etc/gdm3/daemon.conf
+
+#WaylandEnable=false
+
+change to :
+
+WaylandEnable=false
+
 #
 
 Dependencies : 
