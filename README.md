@@ -79,7 +79,7 @@ With Debian Buster I found that this solution did not work ! :
 
 If you run "xrandr" in terminal and you get "WAYLAND0 connected" then,
 
-"uncommented" a line in deamon.conf (can also be another file check with (cat .))
+"uncommented" a line in deamon.conf (can also be another file check with (cat \*.\*))
 
 sudo nano /etc/gdm3/daemon.conf
 
