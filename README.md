@@ -52,6 +52,22 @@ Created so you don't have to do this command, manually, in the terminal.
 
 if used, install.sh will also add an emulationstation desktop file that will run in low resolution
 
+800x600 will work good on (see also the info from the file use-vesa.conf):
+
+- Lubuntu 18.04
+
+- Debian 10 Buster with lxde-desktop installed and WaylandEnable=false in /etc/gdm3/daemon.conf
+
+- Raspian / Raspberry pi OS on RPI-4 with Pixel desktop 
+
+800x600 will work less on (see also the info from the file use-vesa.conf):
+
+- Raspian X86 / Raspberry pi OS X86 with Pixel desktop 
+(when resolution is changed, issues with task-bar can occur) 
+
+- Debian 10 Buster with Debian-desktop installed and WaylandEnable=false in /etc/gdm3/daemon.conf
+(when resolution is changed, artifacts and blurr in display can occur) 
+
 # uninstall.sh
 
 Removes the RetroRun directory in RetroPie,  the application('s) (.desktop file('s)) and associated filetypes with RetroRun.
