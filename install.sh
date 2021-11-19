@@ -33,6 +33,7 @@ cp RetroRun_onstart.sh ~/RetroPie/RetroRun/RetroRun_onstart.sh
 chmod +x ~/RetroPie/RetroRun/RetroRun_onstart.sh
 
 #generate desktopfile in the user applications directory ( code idea is from emulationstation.sh in retropie setup )
+mkdir -p ~/.local/share/applications
 desktopfile=~/.local/share/applications/RetroRun.desktop
 homedir=$(echo $HOME)
 #remove desktopfile if exists

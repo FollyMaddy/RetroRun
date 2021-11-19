@@ -9,13 +9,13 @@
 #feh -F -N -Z -Y -q /etc/emulationstation/themes/carbon/art/carbon_fiber.png &
 # or
 # Joystick image
-#feh -F -N -Z -Y -q $HOME/ RetroPie/retropiemenu/icons/rpsetup.png &
+#feh -F -N -Z -Y -q $HOME/RetroPie/retropiemenu/icons/rpsetup.png &
 # or
 # RetroPie image
-#feh -F -N -Z -Y -q $HOME/ RetroPie/retropiemenu/icons/splashscreen.png &
+#feh -F -N -Z -Y -q $HOME/RetroPie/retropiemenu/icons/splashscreen.png &
 # or
 # Retroarch image
 #feh -F -N -Z -Y -q $HOME/RetroPie/retropiemenu/icons/retroarch.png &
 # or
 # Runcommand image
-#feh -F -N -Z -Y -q $HOME/ RetroPie/retropiemenu/icons/runcommand.png &
+#feh -F -N -Z -Y -q $HOME/RetroPie/retropiemenu/icons/runcommand.png &
