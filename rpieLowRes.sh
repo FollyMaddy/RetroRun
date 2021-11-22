@@ -30,7 +30,7 @@
 #load file with bash script
 option=$1
 ##if option contains a resolution then execute the commands
-if [[ -z "${option##640x480}" ]] || [[ -z "${option##800x600}" ]] || [[ -z "${option##720x400}" ]]; then
+if [[ $(echo $(xrandr|grep "^   "|cut -d " " -f 4)) == *$test* ]]; then
     low_resolution=$option
     echo $low_resolution
     xrandroutput=$(xrandr | tr -d "\n")

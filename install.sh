@@ -52,7 +52,7 @@ X-KeepTerminal=true
 Categories=Emulator;Game
 _EOF_
 
-#if ~/.config/mimeapps.list does not jet exist, then associations will not be added !
+#if ~/.config/mimeapps.list does not yet exist, then associations will not be added !
 #add associations, if no associations for RetroRun exists in mimeapps.list
 mimeappsfile=~/.config/mimeapps.list
 checkforinstall=$(cat $mimeappsfile)
@@ -79,9 +79,10 @@ $mimeappsfile
 fi
 
 desktopfile=~/.local/share/applications/rpieLowRes.desktop
+mkdir -p ~/.local/share/applications
 rm $desktopfile
 
-if [[ "$desiredresolution" == 640x480 ]] || [[ "$desiredresolution" == 800x600 ]] || [[ "$desiredresolution" == 720x400 ]]; then
+if [[ -n $desiredresolution ]]; then
 cp rpieLowRes.sh ~/RetroPie/RetroRun/rpieLowRes.sh
 chmod +x ~/RetroPie/RetroRun/rpieLowRes.sh
 
