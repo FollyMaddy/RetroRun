@@ -1,16 +1,16 @@
 # RetroRun
 
-Open RetroPie roms in standard pcmanfm filemanager with 1 click !
+Open RetroPie roms in standard filemanager with 1 click !
 
 Program : RetroRun.sh
 
-Version : 1.5
+Version : 1.6
 
 #
 
 Use : 
 
-RetroRun is a simple program created to run allmost all ROMS of RetroPie from your windows desktop enviroment (X) with pcmanfm filemanager.
+RetroRun is a simple program created to run allmost all ROMS of RetroPie from your windows desktop enviroment (X) with the filemanager.
 
 If a resolution is added to the script, then roms will run in an alternative resolution.
 
@@ -44,7 +44,7 @@ uncomment your desired feh line in RetroRun_onstart.sh.
 
 Creates a directory in RetroPie, makes an application (.desktop file) and associates filetypes with RetroRun.
 
-# install_800x600.sh
+# install_800x600.sh (resolution change may not work on Debian 11 or higher, so don't use it then)
 
 Runs install.sh with 800x600 option, so RetroRun will run in low resolution after installation.
 
@@ -57,6 +57,8 @@ if used, install.sh will also add an emulationstation desktop file that will run
 - Lubuntu 18.04
 
 - Debian 10 Buster with lxde-desktop installed and WaylandEnable=false in /etc/gdm3/daemon.conf
+
+- Debian 12 Bookworm with mate-desktop installed
 
 - Raspian / Raspberry pi OS on RPI-4 with Pixel desktop 
 
@@ -72,11 +74,11 @@ if used, install.sh will also add an emulationstation desktop file that will run
 
 Removes the RetroRun directory in RetroPie,  the application('s) (.desktop file('s)) and associated filetypes with RetroRun.
 
-# rpieLowRes.sh
+# rpieLowRes.sh (resolution change may not work on Debian 11 or higher, so don't use it then)
 
 Run Emulationstation in low resolution.
 
-# use-vesa.conf
+# use-vesa.conf (resolution change may not work on Debian 11 or higher, so don't use it then)
 
 (for use on X86 computers)
 
@@ -112,7 +114,7 @@ Dependencies :
 
 RetroRun only works if RetroPie is installed on your computer.
 
-RetroRun uses pcmanfm filemanager !!!
+RetroRun uses caja or pcmanfm filemanager to display ~/RetroPie/roms/ , if you run it from the menu !!!
 
 #
 

@@ -36,7 +36,8 @@ if [[ $(echo $(xrandr|grep "^   "|cut -d " " -f 4)) == *$1* ]]; then
     #read the second option
     option=$2
     if [[ -z "${option}" ]]; then
-        pcmanfm ~/RetroPie/roms
+        [[ -f /usr/bin/caja ]] && caja ~/RetroPie/roms
+        [[ -f /usr/bin/pcmanfm ]] && pcmanfm ~/RetroPie/roms
     else
     xrandroutput=$(xrandr | tr -d "\n")
     IFS=':,' read -ra xrandrsplit <<< "$xrandroutput"
