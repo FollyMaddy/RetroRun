@@ -38,6 +38,7 @@ if [[ $(echo $(xrandr|grep "^   "|cut -d " " -f 4)) == *$1* ]]; then
     if [[ -z "${option}" ]]; then
         [[ -f /usr/bin/caja ]] && caja ~/RetroPie/roms
         [[ -f /usr/bin/pcmanfm ]] && pcmanfm ~/RetroPie/roms
+        [[ -f /usr/bin/nautilus ]] && nautilus ~/RetroPie/roms
     else
     xrandroutput=$(xrandr | tr -d "\n")
     IFS=':,' read -ra xrandrsplit <<< "$xrandroutput"
